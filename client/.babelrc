@@ -1,0 +1,19 @@
+{
+    "presets": ["@babel/preset-env", "@babel/react"],
+    "plugins": [
+        "@babel/plugin-proposal-export-default-from",
+        "@babel/plugin-proposal-class-properties",
+        "css-modules-transform",
+        "inline-react-svg",
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "absoluteRuntime": false,
+                "corejs": false,
+                "helpers": true,
+                "regenerator": true,
+                "useESModules": false
+            }
+        ]
+    ]
+}
