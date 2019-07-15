@@ -20,6 +20,7 @@
         "react/jsx-filename-extension": ["off"],
         "react/prop-types": ["warn"],
         "no-return-assign": ["off"],
-        "react/jsx-indent": ["off"]
+        "react/jsx-indent": ["off"],
+        "react/jsx-indent-props": ["off"]
     }
 }

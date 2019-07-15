@@ -19,7 +19,7 @@ module.exports = {
     module: {
         rules: [
             { test: /\.(png|svg)$/, loader: 'url-loader?limit=8192' },
-            {
+            /* {
                 test: /^((?!\.module).)*\.css$/,
                 loaders: ['style-loader', 'css-loader'],
             },
@@ -29,14 +29,11 @@ module.exports = {
                     'style-loader',
                     'css-loader?modules&localIdentName=[name]__[local]___[hash:base64:5]!',
                 ],
-            },
+            },*/
             {
                 test: /\.scss$/,
-                loaders: ['css-loader', 'sass-loader'],
-            },
-            {
-                test: /\.css$/,
-                loaders: ['css-loader', 'sass-loader'],
+                loaders: ['style-loader', 'css-loader', 'sass-loader?indentedSyntax=false'],
+                include: path.resolve(__dirname, '../'),
             },
             {
                 test: /\.svg$/,

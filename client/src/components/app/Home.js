@@ -1,12 +1,12 @@
 import React from 'react';
-import Tree from '../../assets/images/tree.svg';
+import Tree from '../../assets/images/Tree';
+import '../../stylesheets/app/home.scss';
 
 const Home = () => {
-    console.log('what is oging ne');
     console.log(Tree);
     return (
         <div className="home">
-            <Tree />
+            <Tree className="tree" pathClass="tree__path" />
             <h1>this is the home page woo</h1>
         </div>
     );
