@@ -36,14 +36,24 @@ const App = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="landing_nav_links_current" to="/">
+                            <a
+                                className="landing_nav_links_current"
+                                href="https://github.com/yilinggk"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <GitHub className="icon" width="1.5em" height="1.5em" />
-                            </NavLink>
+                            </a>
                         </li>
                         <li>
-                            <NavLink className="landing_nav_links_current" to="/">
+                            <a
+                                className="landing_nav_links_current"
+                                href="https://www.linkedin.com/in/yiling-kang-066954139/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <Linkedin className="icon" width="1.5em" height="1.5em" />
-                            </NavLink>
+                            </a>
                         </li>
                     </ul>
                 </div>
