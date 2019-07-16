@@ -1,4 +1,4 @@
-#### Yiling's Personal Site
+## Yiling's Personal Site
 
 ### Purpose
 
@@ -24,5 +24,7 @@ Also to display some of my design capabilities and React/.js/.css knowledge.
 - To-do list app
 - Reminders app (sends me emails to remind me!)
 - Yiling's cookbook
+  - All recipes that Yiling likes
+  - Option to randomly choose a recipe for meal prep that week
 - Yiling's sketchbook
 - User log in/out so they can use the apps I created

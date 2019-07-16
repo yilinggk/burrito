@@ -5,6 +5,7 @@
         "@babel/plugin-proposal-class-properties",
         "css-modules-transform",
         "inline-react-svg",
+        "array-includes",
         [
             "@babel/plugin-transform-runtime",
             {

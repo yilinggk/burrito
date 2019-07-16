@@ -19,8 +19,8 @@
         padding: 1% 1% 1% 2%;
         font-size: 2.7em;
         font-family: $font_name;
-
-        &_link {
+        width: 13%;
+        height: 0% &_link {
             text-decoration: none;
             color: $header_color;
         }

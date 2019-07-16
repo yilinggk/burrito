@@ -2,7 +2,9 @@ import React from 'react';
 import { Route, NavLink } from 'react-router-dom';
 import Home from './components/app/Home';
 import { GitHub, Linkedin } from './assets/icons';
+import Name from './assets/images/Name';
 import './stylesheets/App.scss';
+import './stylesheets/name.scss';
 
 const App = () => {
     return (
@@ -10,7 +12,7 @@ const App = () => {
             <div className="landing">
                 <div className="landing_name">
                     <NavLink className="landing_name_link" to="/">
-                        yiling&nbsp;kang
+                        <Name fill="#fff9fc" />
                     </NavLink>
                 </div>
                 <div className="landing_nav">
@@ -42,7 +44,12 @@ const App = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <GitHub className="icon" width="1.5em" height="1.5em" />
+                                <GitHub
+                                    className="icon"
+                                    width="1.5em"
+                                    height="1.5em"
+                                    fill="#fff9fc"
+                                />
                             </a>
                         </li>
                         <li>
@@ -52,7 +59,12 @@ const App = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <Linkedin className="icon" width="1.5em" height="1.5em" />
+                                <Linkedin
+                                    className="icon"
+                                    width="1.5em"
+                                    height="1.5em"
+                                    fill="#fff9fc"
+                                />
                             </a>
                         </li>
                     </ul>
