@@ -1,13 +1,17 @@
 import React from 'react';
 import Tree from '../../assets/images/Tree';
+import { Next } from '../../assets/icons';
 import '../../stylesheets/app/home.scss';
 
 const Home = () => {
-    console.log(Tree);
     return (
         <div className="home">
-            <Tree className="tree" pathClass="tree__path" />
-            <h1>this is the home page woo</h1>
+            <div className="tree">
+                <Tree className="tree_svg" pathClass="tree__path" />
+            </div>
+            <div className="nextButton">
+                <Next className="nextButton_svg" width="3em" height="3em" viewBox="0 0 129 129" />
+            </div>
         </div>
     );
 };
