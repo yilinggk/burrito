@@ -24,22 +24,22 @@ const Tree = ({
                 <stop offset="0%" stopColor="white" stopOpacity=".5">
                     <animate
                         attributeName="stop-color"
-                        values="white;aliceblue;aquamarine;lightpink;red;midnightblue;springgreen;red;purple;lightblue;white"
-                        dur="12s"
+                        values="white;aliceblue;aqua;lightpink;red;slateblue;seagreen;red;purple;lightblue;white"
+                        dur="18"
                         repeatCount="indefinite"
                     />
                 </stop>
                 <stop offset="100%" stopColor="lightblue" stopOpacity=".5">
                     <animate
                         attributeName="stop-color"
-                        values="white;lightblue;aqua;red;orchid;slateblue;seagreen;purple;lightskyblue;lightcyan;white"
-                        dur="12s"
+                        values="white;lightblue;aquamarine;red;orchid;midnightblue;springgreen;purple;lightskyblue;lightcyan;white"
+                        dur="18s"
                         repeatCount="indefinite"
                     />
                     <animate
                         attributeName="offset"
                         values=".95;.80;.70;.50;.40;.20;0;.20;.40;.60;.80;.95"
-                        dur="12s"
+                        dur="18s"
                         repeatCount="indefinite"
                     />
                 </stop>
