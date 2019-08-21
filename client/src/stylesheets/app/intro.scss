@@ -1,0 +1,28 @@
+@import '../utilities/variables';
+
+.intro {
+    background-color: $background_info;
+    width: 100vw;
+    height: 60vh;
+    font-family: $font_main;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $font_main_color;
+
+    &__greeting {
+        font-size: 4em;
+        font-weight: 600;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 0.5em;
+    }
+
+    &__info {
+        font-size: 2em;
+        width: 50%;
+        margin: auto;
+        margin-top: 0;
+    }
+}

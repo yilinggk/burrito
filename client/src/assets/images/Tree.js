@@ -4,21 +4,12 @@ import React from 'react';
 const Tree = ({
     fill = 'url(#skyGradient)',
     style = {},
-    width = '100vw',
-    height = '100vh',
     className = '',
     viewBox = '0 0 400 320',
     pathClass = '',
     pathStyle = {},
 }) => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width={width}
-        height={height}
-        viewBox={viewBox}
-        className={className}
-        style={style}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox={viewBox} className={className} style={style}>
         <defs>
             <linearGradient id="skyGradient" x1="100%" y1="100%">
                 <stop offset="0%" stopColor="white" stopOpacity=".5">
