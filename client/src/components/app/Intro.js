@@ -7,6 +7,7 @@ class Intro extends Component {
         const info = document.getElementById('info');
 
         const fadeInOut = element => {
+            // eslint-disable-next-line no-param-reassign
             element.style.opacity = window.scrollY / 250;
         };
 

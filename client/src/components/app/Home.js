@@ -2,10 +2,12 @@ import React, { createRef } from 'react';
 import Tree from '../../assets/images/Tree';
 import { Next } from '../../assets/icons';
 import Intro from './Intro';
+import SheepMain from './SheepMain';
 import '../../stylesheets/app/home.scss';
 
 const Home = () => {
     const introRef = createRef();
+    const sheepRef = createRef();
 
     const scrollToIntro = () => {
         window.scrollTo({
@@ -33,6 +35,7 @@ const Home = () => {
                 </div>
             </div>
             <Intro introRef={introRef} />
+            <SheepMain sheepRef={sheepRef} />
         </div>
     );
 };
