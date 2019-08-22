@@ -1,32 +1,19 @@
-import React, { Component } from 'react';
-import '../../stylesheets/app/intro.scss';
+import React from 'react';
+import '../../stylesheets/app/homeElem.scss';
 
-class SheepMain extends Component {
-    componentDidMount() {
-        const sheepGame = document.getElementById('sheepGame');
-
-        const fadeInOut = element => {
-            // eslint-disable-next-line no-param-reassign
-            element.style.opacity = window.scrollY / 250;
-        };
-
-        window.onscroll = () => {
-            fadeInOut(sheepGame);
-        };
-    }
-
-    render() {
-        const { sheepRef } = this.props;
-
-        return (
-            <div className="sheepGame" id="sheepGame" ref={sheepRef}>
-                <div className="sheepGame__placeholder" id="placeholder">
-                    yiling&apos;s sheep minigame <br /> <br />
-                    coming soon!!
+function SheepMain() {
+    return (
+        <div className="sheepGame" id="sheepGame">
+            <div className="sheepGame__border">
+                <div className="sheepGame__border__placeholder" id="placeholder">
+                    <div className="sheepGame__border__placeholder__text">
+                        <b>Yiling&apos;s Sheep Minigame</b> <br />
+                        Coming Soon!
+                    </div>
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
 }
 
 export default SheepMain;

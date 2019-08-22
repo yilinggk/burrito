@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../stylesheets/app/intro.scss';
+import '../../stylesheets/app/homeElem.scss';
 
 class Intro extends Component {
     componentDidMount() {
@@ -23,7 +23,7 @@ class Intro extends Component {
         return (
             <div className="intro" id="intro" ref={introRef}>
                 <div className="intro__greeting" id="greeting">
-                    hey everyone!
+                    hi there!
                 </div>
                 <div className="intro__info" id="info">
                     I&apos;m Yiling, a full-stack developer and designer currently based in

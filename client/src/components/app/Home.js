@@ -7,7 +7,6 @@ import '../../stylesheets/app/home.scss';
 
 const Home = () => {
     const introRef = createRef();
-    const sheepRef = createRef();
 
     const scrollToIntro = () => {
         window.scrollTo({
@@ -35,7 +34,7 @@ const Home = () => {
                 </div>
             </div>
             <Intro introRef={introRef} />
-            <SheepMain sheepRef={sheepRef} />
+            <SheepMain />
         </div>
     );
 };
