@@ -34,7 +34,6 @@ const Home = () => {
                 </div>
             </div>
             <Intro introRef={introRef} />
-            <SheepMain />
         </div>
     );
 };

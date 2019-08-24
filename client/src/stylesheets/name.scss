@@ -8,37 +8,37 @@
 .animate-y {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
-    animation: dash 5s linear forwards;
+    animation: dash 4s linear forwards;
 }
 
 .animate-i1 {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
-    animation: dash 5s linear 0.2s forwards;
+    animation: dash 4s linear 0.2s forwards;
 }
 
 .animate-l {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
-    animation: dash 5s linear 0.4s forwards;
+    animation: dash 4s linear 0.4s forwards;
 }
 
 .animate-i2 {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
-    animation: dash 5s linear 0.6s forwards;
+    animation: dash 4s linear 0.6s forwards;
 }
 
 .animate-n1 {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
-    animation: dash 5s linear 0.8s forwards;
+    animation: dash 4s linear 0.8s forwards;
 }
 
 .animate-g1 {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
-    animation: dash 5s linear 1s forwards;
+    animation: dash 4s linear 1s forwards;
 }
 
 .animate-k {
@@ -50,19 +50,19 @@
 .animate-a {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
-    animation: dash 5s linear 1.6s forwards;
+    animation: dash 4s linear 1.6s forwards;
 }
 
 .animate-n2 {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
-    animation: dash 5s linear 1.8s forwards;
+    animation: dash 4s linear 1.8s forwards;
 }
 
 .animate-g2 {
     stroke-dasharray: 300;
     stroke-dashoffset: 300;
-    animation: dash 5s linear 2s forwards;
+    animation: dash 4s linear 2s forwards;
 }
 
 @keyframes dash {
