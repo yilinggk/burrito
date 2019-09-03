@@ -2,7 +2,6 @@ import React, { createRef } from 'react';
 import Tree from '../../assets/images/Tree';
 import { Next } from '../../assets/icons';
 import Intro from './Intro';
-import SheepMain from './SheepMain';
 import '../../stylesheets/app/home.scss';
 
 const Home = () => {

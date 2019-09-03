@@ -22,11 +22,11 @@ class Intro extends Component {
         const { introRef } = this.props;
 
         return (
-            <div className="introContainer">
+            <div className="introContainer" ref={introRef}>
                 <div className="femaleSide">
                     <FemaleSide />
                 </div>
-                <div className="intro" id="intro" ref={introRef}>
+                <div className="intro" id="intro">
                     <div className="intro__greeting" id="greeting">
                         hi there!
                     </div>

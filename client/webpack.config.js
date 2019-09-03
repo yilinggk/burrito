@@ -18,18 +18,10 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.(png|svg)$/, loader: 'url-loader?limit=8192' },
-            /* {
-                test: /^((?!\.module).)*\.css$/,
-                loaders: ['style-loader', 'css-loader'],
-            },
             {
-                test: /\.module\.css$/,
-                loaders: [
-                    'style-loader',
-                    'css-loader?modules&localIdentName=[name]__[local]___[hash:base64:5]!',
-                ],
-            },*/
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                loaders: ['file-loader?name=src/assets/backgrounds/[name].[ext]"'],
+            },
             {
                 test: /\.scss$/,
                 loaders: ['style-loader', 'css-loader', 'sass-loader?indentedSyntax=false'],

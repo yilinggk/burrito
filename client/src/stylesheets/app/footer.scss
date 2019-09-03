@@ -3,7 +3,7 @@
 .footer {
     background-color: $background_main;
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     font-family: $font_header;
     text-align: center;
     display: flex;
@@ -13,9 +13,35 @@
     justify-content: space-around;
     overflow: hidden;
 
-    &__text {
+    &_text {
         font-size: 1em;
         width: 60%;
         margin: auto;
+    }
+
+    &_nav {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4em;
+
+        &_links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &_current {
+                text-decoration: none;
+                color: $header_color;
+                transition: 0.3s;
+
+                &:hover {
+                    border-bottom: 0.2em solid $hover_color;
+                }
+            }
+        }
     }
 }

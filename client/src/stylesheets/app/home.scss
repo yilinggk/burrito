@@ -1,5 +1,11 @@
 @import '../utilities/variables';
 
+@media only screen and (max-width: 750px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
 .home {
     background-color: $background_main;
     width: 100%;

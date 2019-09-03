@@ -59,17 +59,7 @@ class Header extends Component {
                 <div className="landing_nav">
                     <ul className="landing_nav_links">
                         <li>
-                            <NavLink className="landing_nav_links_current" to="/">
-                                about
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink className="landing_nav_links_current" to="/">
-                                skills
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink className="landing_nav_links_current" to="/">
+                            <NavLink className="landing_nav_links_current" to="/resume">
                                 resume
                             </NavLink>
                         </li>
