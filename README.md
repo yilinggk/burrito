@@ -9,14 +9,18 @@ Also to display some of my design capabilities and React/.js/.css knowledge.
 
 - [x] Create site home container and various styles
 - Site home
-  - [ ] textual content
-  - [ ] graphics content
-  - [ ] links up and active
-  - [ ] transitions between containers in home page
+  - [x] textual content
+  - [x] graphics content
+  - [x] links up and active
+  - [x] transitions between containers in home page
   - [ ] transition between home page and other pages
-- Skills Page (todo list tbd)
 - Resume page (todo list tbd)
+  - [ ] Resume download button on header area
+  - [ ] Resume experience components
+  - [ ] Resume skills section
+  - [ ] Resume experience section
 - Contact page (?? may not be necessary?)
+- Make everything mobile and tablet friendly!
 
 ### Backend things I want to include
 

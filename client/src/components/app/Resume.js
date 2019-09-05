@@ -19,7 +19,17 @@ const Resume = () => {
         <div>
             <div className="resume" id="resume">
                 <div className="resume_heading">
-                    <div className="resume_heading_text">RESUME</div>
+                    <div className="resume_heading_text">A LITTLE MORE ME...</div>
+                    <div className="resume_heading_download">
+                        <a
+                            className="resume_heading_download_button"
+                            href="https://www.dropbox.com/sh/2h7nvw1bef21h1d/AABGVwdTfDh-E5w2INr2paLca?dl=0"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            DOWNLOAD RESUME
+                        </a>
+                    </div>
                 </div>
                 <div className="nextButton">
                     <button
@@ -28,7 +38,7 @@ const Resume = () => {
                         onClick={() => scrollToIntro()}
                         onMouseDown={e => e.preventDefault()}
                     >
-                        <Next width="1.5em" height="1.5em" viewBox="0 0 129 129" fill="#2a2a2a" />
+                        <Next width="2.6em" height="2.6em" viewBox="0 0 129 129" fill="#2a2a2a" />
                     </button>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import '../../stylesheets/App.scss';
 
 export default function MobileNav() {
     const handleClose = () => {
-        document.getElementById('mobileNav').style.width = '0%';
+        document.getElementById('mobileNav').style.height = '0%';
     };
 
     return (

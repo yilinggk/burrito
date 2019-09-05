@@ -28,7 +28,7 @@ const Home = () => {
                         onClick={() => scrollToIntro()}
                         onMouseDown={e => e.preventDefault()}
                     >
-                        <Next width="1.5em" height="1.5em" viewBox="0 0 129 129" />
+                        <Next width="2.6em" height="2.6em" viewBox="0 0 129 129" />
                     </button>
                 </div>
             </div>

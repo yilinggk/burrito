@@ -50,7 +50,7 @@ class Header extends Component {
         const { showName } = this.state;
 
         const handleClick = () => {
-            document.getElementById('mobileNav').style.width = '100%';
+            document.getElementById('mobileNav').style.height = '100%';
         };
         return (
             <div className="landing" id="header">
