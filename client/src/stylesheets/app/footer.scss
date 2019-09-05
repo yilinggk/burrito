@@ -45,3 +45,52 @@
         }
     }
 }
+
+// Increase distance between icons in footer on tablets and mobile devices
+@media (max-width: 768px) {
+    .footer {
+        background-color: $background_main;
+        width: 100%;
+        height: 30vh;
+        font-family: $font_header;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: $header_color;
+        justify-content: space-around;
+        overflow: hidden;
+
+        &_text {
+            font-size: 1em;
+            width: 60%;
+            margin: auto;
+        }
+
+        &_nav {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 4em;
+
+            &_links {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &_current {
+                    text-decoration: none;
+                    color: $header_color;
+                    transition: 0.3s;
+
+                    &:hover {
+                        border-bottom: 0.2em solid $hover_color;
+                    }
+                }
+            }
+        }
+    }
+}

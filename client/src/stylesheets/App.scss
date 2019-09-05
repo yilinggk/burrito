@@ -5,6 +5,61 @@
     position: relative;
 }
 
+.landingMobile_nav {
+    display: none;
+}
+
+.mobileNav {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 999999; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0); /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+
+    &_content {
+        display: flex;
+        flex-direction: column;
+        font-family: $font_header;
+        font-size: 1.6em;
+        height: 40%;
+
+        &_links {
+            text-decoration: none;
+            color: $header_color;
+            margin: auto;
+
+            &:hover {
+                color: $hover_color;
+            }
+        }
+    }
+
+    &_close {
+        display: flex;
+        justify-content: flex-end;
+
+        &_button {
+            border: none;
+            background-color: transparent;
+            color: $header_color;
+            font-size: 4em;
+            padding: 1% 2%;
+
+            &:hover {
+                color: $hover_color;
+            }
+        }
+    }
+}
+
 .landing {
     display: flex;
     flex-direction: row;
@@ -20,7 +75,8 @@
         font-size: 2.7em;
         font-family: $font_name;
         width: 13%;
-        height: 0% &_link {
+        height: 0%;
+        &_link {
             text-decoration: none;
             color: $header_color;
         }
@@ -70,4 +126,42 @@
 .content {
     display: flex;
     flex-direction: column;
+}
+
+// full page navbar on smaller screen devices
+@media (max-width: 675px) {
+    .landing_nav {
+        display: none;
+    }
+    .landingMobile_nav {
+        font-size: 1.2em;
+        font-family: 'Poppins', sans-serif;
+        /* width: 30%; */
+        display: flex;
+        align-items: end;
+        justify-content: right;
+
+        &_button {
+            border: none;
+            background-color: transparent;
+        }
+        &_links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &_current {
+                text-decoration: none;
+                color: $header_color;
+                transition: 0.3s;
+
+                &:hover {
+                    border-bottom: 0.2em solid $hover_color;
+                }
+            }
+        }
+    }
 }

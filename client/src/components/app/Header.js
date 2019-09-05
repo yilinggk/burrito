@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { GitHub, Linkedin } from '../../assets/icons';
+import { GitHub, Linkedin, Menu } from '../../assets/icons';
 import Name from '../../assets/images/Name';
 import '../../stylesheets/App.scss';
 import '../../stylesheets/name.scss';
@@ -49,12 +49,24 @@ class Header extends Component {
     render() {
         const { showName } = this.state;
 
+        const handleClick = () => {
+            document.getElementById('mobileNav').style.width = '100%';
+        };
         return (
             <div className="landing" id="header">
                 <div className="landing_name">
                     <NavLink className="landing_name_link" onMouseEnter={this.renderName} to="/">
                         {showName ? <Name fill="#fff9fc" /> : null}
                     </NavLink>
+                </div>
+                <div className="landingMobile_nav">
+                    <button
+                        type="button"
+                        className="landingMobile_nav_button"
+                        onClick={() => handleClick()}
+                    >
+                        <Menu width="2em" height="2em" fill="#fff9fc" />
+                    </button>
                 </div>
                 <div className="landing_nav">
                     <ul className="landing_nav_links">
