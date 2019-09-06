@@ -181,7 +181,7 @@ class ResumeContent extends Component {
                         </a>
                     </div>
                     <div className="resumeContent_contact_linkedin">
-                        ... or <b>message</b> me on{' '}
+                        ... or&nbsp;<b>message</b>&nbsp;me on{' '}
                         <a
                             className="resumeContent_contact_linkedin_link"
                             href="https://www.linkedin.com/in/yiling-kang-066954139/"

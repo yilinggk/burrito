@@ -249,3 +249,71 @@
         }
     }
 }
+
+// smaller screens reduce font size
+@media (max-width: 600px) {
+    .resumeContent {
+        &_skills {
+            &_header {
+                font-size: 2.2em;
+            }
+
+            &_content {
+                &_languages {
+                    font-size: 1.2em;
+
+                    &_list {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+
+        &_experience {
+            &_header {
+                font-size: 2.2em;
+            }
+
+            &_container {
+                &_position {
+                    font-size: 1.2em;
+                }
+
+                &_companyDate {
+                    font-size: 1em;
+                }
+
+                &_location {
+                    font-size: 1em;
+                }
+
+                &_skills {
+                    font-size: 1.05em;
+                    margin-top: 2%;
+                }
+                &_details {
+                    font-size: 1.05em;
+                    &_list {
+                        list-style-type: circle;
+                        &_item {
+                        }
+                    }
+                }
+            }
+        }
+
+        &_contact {
+            &_header {
+                font-size: 2.2em;
+            }
+
+            &_email {
+                font-size: 1.1em;
+            }
+
+            &_linkedin {
+                font-size: 1.1em;
+            }
+        }
+    }
+}
