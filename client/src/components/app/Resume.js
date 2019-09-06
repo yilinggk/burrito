@@ -1,15 +1,15 @@
 import React, { createRef } from 'react';
-
+import ResumeContent from './ResumeContent';
 import { Next } from '../../assets/icons';
 
 import '../../stylesheets/app/resume.scss';
 
 const Resume = () => {
-    const introRef = createRef();
+    const resumeRef = createRef();
 
     const scrollToIntro = () => {
         window.scrollTo({
-            top: introRef.current.offsetTop,
+            top: resumeRef.current.offsetTop,
             left: 0,
             behavior: 'smooth',
         });
@@ -17,7 +17,7 @@ const Resume = () => {
 
     return (
         <div>
-            <div className="resume" id="resume">
+            <div className="resume">
                 <div className="resume_heading">
                     <div className="resume_heading_text">A LITTLE MORE ME...</div>
                     <div className="resume_heading_download">
@@ -42,6 +42,7 @@ const Resume = () => {
                     </button>
                 </div>
             </div>
+            <ResumeContent resumeRef={resumeRef} />
         </div>
     );
 };

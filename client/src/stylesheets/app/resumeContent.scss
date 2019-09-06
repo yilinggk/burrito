@@ -1,0 +1,251 @@
+@import '../utilities/variables';
+
+.resumeContent {
+    font-family: $font_main;
+    position: relative;
+    color: $font_main_color;
+
+    &_skills {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
+        background-color: $background_info;
+        padding-bottom: 10%;
+
+        &_header {
+            font-size: 3em;
+            padding: 7% 0 7% 0;
+            width: 70%;
+            font-weight: 300;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            margin: auto;
+            justify-content: space-evenly;
+
+            &_languages {
+                font-size: 1.2em;
+                font-weight: 600;
+                padding: 1% 1%;
+
+                &_list {
+                    font-size: 0.9em;
+                    font-weight: 400;
+                    text-decoration: none;
+                    list-style: none;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+
+                    &_item {
+                        border: 0.05em solid;
+                        padding: 0.3% 1.5%;
+                        margin: 0.5% 0.5%;
+                        width: fit-content;
+                        border-radius: 0.7em;
+                        border-color: $font_main_light;
+                    }
+                }
+            }
+        }
+    }
+
+    &_experience {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
+        background-color: $background_second;
+        padding-bottom: 10%;
+
+        &_header {
+            font-size: 3em;
+            padding: 7% 0 7% 0;
+            width: 70%;
+            font-weight: 300;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        &_container {
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+            justify-content: center;
+            align-items: flex-start;
+            margin: auto;
+            padding-bottom: 3%;
+
+            &_position {
+                font-size: 1.5em;
+                font-weight: 600;
+                margin-bottom: 1%;
+            }
+
+            &_companyDate {
+                font-size: 1.1em;
+                font-style: italic;
+                margin-bottom: 0.2%;
+            }
+
+            &_location {
+                font-size: 1.1em;
+            }
+
+            &_skills {
+                font-size: 1.2em;
+                margin-top: 2%;
+            }
+            &_details {
+                font-size: 1.2em;
+                width: 100%;
+
+                &_list {
+                    list-style-type: circle;
+                    &_item {
+                    }
+                }
+            }
+        }
+    }
+
+    &_contact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
+        background-color: $background_info;
+        padding-bottom: 10%;
+
+        &_header {
+            font-size: 3em;
+            padding: 7% 0 7% 0;
+            width: 70%;
+            font-weight: 300;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        &_email {
+            font-size: 1.7em;
+            /* width: 50%; */
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            &_link {
+                text-decoration: none;
+                color: $font_main_medium;
+
+                &:hover {
+                    color: $font_main_color;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        &_linkedin {
+            font-size: 1.7em;
+            /* width: 50%; */
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            &_link {
+                text-decoration: none;
+                color: $font_main_medium;
+
+                &:hover {
+                    color: $font_main_color;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+// smaller screens reduce font size
+@media (max-width: 750px) {
+    .resumeContent {
+        &_skills {
+            &_header {
+                font-size: 2.7em;
+            }
+
+            &_content {
+                &_languages {
+                    font-size: 1.2em;
+
+                    &_list {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+
+        &_experience {
+            &_header {
+                font-size: 2.7em;
+            }
+
+            &_container {
+                &_position {
+                    font-size: 1.2em;
+                }
+
+                &_companyDate {
+                    font-size: 1em;
+                }
+
+                &_location {
+                    font-size: 1em;
+                }
+
+                &_skills {
+                    font-size: 1.05em;
+                    margin-top: 2%;
+                }
+                &_details {
+                    font-size: 1.05em;
+                    &_list {
+                        list-style-type: circle;
+                        &_item {
+                        }
+                    }
+                }
+            }
+        }
+
+        &_contact {
+            &_header {
+                font-size: 2.7em;
+            }
+
+            &_email {
+                font-size: 1.5em;
+            }
+
+            &_linkedin {
+                font-size: 1.5em;
+            }
+        }
+    }
+}

@@ -76,11 +76,6 @@ class Header extends Component {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className="landing_nav_links_current" to="/">
-                                contact
-                            </NavLink>
-                        </li>
-                        <li>
                             <a
                                 className="landing_nav_links_current"
                                 href="https://github.com/yilinggk"

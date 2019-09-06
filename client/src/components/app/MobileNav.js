@@ -26,9 +26,6 @@ export default function MobileNav() {
                 >
                     resume
                 </NavLink>
-                <NavLink onClick={() => handleClose()} className="mobileNav_content_links" to="/">
-                    contact
-                </NavLink>
                 <a
                     className="mobileNav_content_links"
                     onClick={() => handleClose()}

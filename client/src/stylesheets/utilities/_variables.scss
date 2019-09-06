@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
 
 $background_main: #101014;
-$background_second: #313146;
-$background_info: #e0e0e0;
+$background_second: #ececec;
+$background_info: #fff9fc;
 $header_color: #fff9fc;
 $header_color_dark: #2a2a2a;
 $hover_color: #cccccc;
 $font_main_color: #2a2a2a;
+$font_main_light: #929292;
+$font_main_medium: #505050;
 $font_main: 'Open Sans', sans-serif;
 $font_header: 'Poppins', sans-serif;
 $font_name: 'Sacramento', serif;
