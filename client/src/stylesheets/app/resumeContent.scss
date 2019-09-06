@@ -118,7 +118,6 @@
 
                 &_list {
                     list-style-type: circle;
-                    padding: 0 1%;
                     &_item {
                     }
                 }
@@ -294,8 +293,10 @@
                 }
                 &_details {
                     font-size: 1.05em;
+
                     &_list {
                         list-style-type: circle;
+                        padding: 0 1%;
                         &_item {
                         }
                     }
