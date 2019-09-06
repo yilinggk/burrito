@@ -65,7 +65,7 @@ class Header extends Component {
                         className="landingMobile_nav_button"
                         onClick={() => handleClick()}
                     >
-                        <Menu width="2em" height="2em" fill="#fff9fc" />
+                        <Menu width="3em" height="3em" fill="#fff9fc" />
                     </button>
                 </div>
                 <div className="landing_nav">
