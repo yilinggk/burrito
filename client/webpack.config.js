@@ -7,10 +7,11 @@ module.exports = {
         extensions: ['*', '.js', '.jsx', '.css', '.scss'],
     },
     output: {
-        path: `${__dirname}/dist`,
+        path: path.resolve(__dirname, 'dist/'),
         publicPath: '/',
         filename: 'bundle.js',
     },
+    watch: true,
     plugins: [new webpack.HotModuleReplacementPlugin()],
     devServer: {
         contentBase: './dist',
@@ -20,7 +21,7 @@ module.exports = {
         rules: [
             {
                 test: /\.(gif|png|jpe?g|svg)$/i,
-                loaders: ['file-loader?name=src/assets/backgrounds/[name].[ext]"'],
+                loaders: ['file-loader?name=src/assets/backgrounds/[name].[ext]'],
             },
             {
                 test: /\.scss$/,

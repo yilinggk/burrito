@@ -32,6 +32,7 @@ const Home = () => {
                     </button>
                 </div>
             </div>
+
             <Intro introRef={introRef} />
         </div>
     );
