@@ -157,7 +157,7 @@ class ResumeContent extends Component {
                     <Experience
                         position="Research Assistant"
                         companyDate="UBC Mechanical Engineering, May 2018 - September 2018"
-                        location="Burnaby, BC"
+                        location="Vancouver, BC"
                         skills="MATLAB, Excel VBA"
                         details={[
                             'Applied computer vision and image processing tools in MATLAB to distinguish particle images from the background to determine the size and morphology of oil and gas flare particles',
