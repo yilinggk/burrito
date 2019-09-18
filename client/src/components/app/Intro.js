@@ -36,7 +36,7 @@ class Intro extends Component {
                         website designs. Most of the graphics and icons used in this site are
                         self-drawn. <br />
                         <br />I am looking for a <b>4 or 8 month</b> software development co-op or
-                        intership position starting <b>January 2020</b>!
+                        internship position starting <b>January 2020</b>!
                     </div>
                 </div>
             </div>
