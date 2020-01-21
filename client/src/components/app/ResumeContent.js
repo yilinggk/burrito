@@ -22,6 +22,7 @@ class ResumeContent extends Component {
 
         return (
             <div className="resumeContent" ref={resumeRef} id="content">
+                <div className="resumeContent_stars" />
                 <div className="resumeContent_skills">
                     <div className="resumeContent_skills_header">here are some of my skills...</div>
                     <div className="resumeContent_skills_content">

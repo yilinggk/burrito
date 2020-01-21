@@ -3,9 +3,21 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
 
+// n is number of stars required
+@function multiple-box-shadow ($n)  {
+  $value: '#{random(100)}vw #{random(1000)}vh #FFF';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(100)}vw #{random(1000)}vh #FFF';
+  }
+  @return unquote($value)
+}
+
+$shadows-small:  multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big:    multiple-box-shadow(100);
 $background_main: #101014;
-$background_second: #ececec;
-$background_info: #fff9fc;
+$background_second: #d4d4d4;
+$background_info: #ececec;
 $header_color: #fff9fc;
 $header_color_dark: #2a2a2a;
 $hover_color: #cccccc;

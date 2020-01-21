@@ -35,8 +35,6 @@ class Intro extends Component {
                         Vancouver, Canada. I love doing digital art and incorporating my art into my
                         website designs. Most of the graphics and icons used in this site are
                         self-drawn. <br />
-                        <br />I am looking for a <b>4 or 8 month</b> software development co-op or
-                        internship position starting <b>January 2020</b>!
                     </div>
                 </div>
             </div>
