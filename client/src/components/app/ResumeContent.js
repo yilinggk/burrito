@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { Component } from 'react';
 import Experience from './Experience';
 import '../../stylesheets/app/resumeContent.scss';
@@ -33,6 +34,12 @@ class ResumeContent extends Component {
                                     Python
                                 </li>
                                 <li className="resumeContent_skills_content_languages_list_item">
+                                    Golang
+                                </li>
+                                <li className="resumeContent_skills_content_languages_list_item">
+                                    Scala
+                                </li>
+                                <li className="resumeContent_skills_content_languages_list_item">
                                     JavaScript
                                 </li>
                                 <li className="resumeContent_skills_content_languages_list_item">
@@ -65,7 +72,7 @@ class ResumeContent extends Component {
                                     jQuery
                                 </li>
                                 <li className="resumeContent_skills_content_languages_list_item">
-                                    Webpack
+                                    GraphQL
                                 </li>
                             </ul>
                         </div>
@@ -82,7 +89,10 @@ class ResumeContent extends Component {
                                     Express
                                 </li>
                                 <li className="resumeContent_skills_content_languages_list_item">
-                                    AJAX
+                                    REST
+                                </li>
+                                <li className="resumeContent_skills_content_languages_list_item">
+                                    gRPC
                                 </li>
                                 <li className="resumeContent_skills_content_languages_list_item">
                                     Postgres
@@ -102,10 +112,22 @@ class ResumeContent extends Component {
                             SERVICES/OPERATING SYSTEMS
                             <ul className="resumeContent_skills_content_languages_list">
                                 <li className="resumeContent_skills_content_languages_list_item">
+                                    Jenkins
+                                </li>
+                                <li className="resumeContent_skills_content_languages_list_item">
+                                    Kubernetes
+                                </li>
+                                <li className="resumeContent_skills_content_languages_list_item">
                                     NGINX
                                 </li>
                                 <li className="resumeContent_skills_content_languages_list_item">
                                     AWS
+                                </li>
+                                <li className="resumeContent_skills_content_languages_list_item">
+                                    Docker
+                                </li>
+                                <li className="resumeContent_skills_content_languages_list_item">
+                                    Tableau
                                 </li>
                                 <li className="resumeContent_skills_content_languages_list_item">
                                     Windows
@@ -115,12 +137,6 @@ class ResumeContent extends Component {
                                 </li>
                                 <li className="resumeContent_skills_content_languages_list_item">
                                     Linux
-                                </li>
-                                <li className="resumeContent_skills_content_languages_list_item">
-                                    Docker
-                                </li>
-                                <li className="resumeContent_skills_content_languages_list_item">
-                                    Tableau
                                 </li>
                             </ul>
                         </div>
@@ -132,12 +148,25 @@ class ResumeContent extends Component {
                     </div>
                     <Experience
                         position="Software Development Co-op"
+                        companyDate="Hootsuite, January 2020 - Present"
+                        location="Vancouver, BC"
+                        skills="Javascript, Golang, Scala, React, GraphQL, Kubernetes, Jenkins,
+                                Docker, AWS"
+                        details={[
+                            "Worked with designers to build out Hootsuite's new UI refresh designs with React frontend and GraphQL middleware",
+                            'Designed and implemented a new Golang microservice to delete expired and over limit threads and reduce user load times by 100x',
+                            'Integrated accessibility features into current Hootsuite product and ensured standards were met with frontend unit testing',
+                            'Actively participated in bi-weekly scrum rituals, and presented new features at company and team wide demos',
+                        ]}
+                    />
+                    <Experience
+                        position="Software Development Co-op"
                         companyDate="Imprint Plus, May 2019 - August 2019"
                         location="Richmond, BC"
                         skills="Javascript, php, Node.js, Express, React, Angular, NGINX, AWS, MySQL,
                                 Docker"
                         details={[
-                            'Built full-stack web application with a Node.js backend and React.js frontend from scratch to deployment to automate repetitive tasks and save up to 5 hours of time daily',
+                            'Built new web application with a Node backend and React frontend to automate repetitive tasks and save up to 5 hours of time daily',
                             'Wrote backend RESTful API to store and retrieve data from MySQL database',
                             'Utilized AWS S3 Buckets and Cloudfront to save and serve user dynamic files',
                             'Deployed backend application to Ubuntu AWS EC2 instance via AWS CodePipeline and served frontend static files using NGINX routing',

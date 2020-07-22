@@ -43,7 +43,7 @@ function Footer() {
                 </ul>
             </div>
             <div className="footer_text">
-                &#9400; Yiling Kang 2019 <br />
+                &#9400; Yiling Kang 2020 <br />
                 All Rights Reserved.
             </div>
         </div>

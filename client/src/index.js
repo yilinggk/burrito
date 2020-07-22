@@ -3,7 +3,7 @@ import '../polyfills';
 import smoothscroll from 'smoothscroll-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, Route } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import './stylesheets/index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
