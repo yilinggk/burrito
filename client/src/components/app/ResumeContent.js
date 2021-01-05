@@ -49,7 +49,7 @@ class ResumeContent extends Component {
                                     C/C++
                                 </li>
                                 <li className="resumeContent_skills_content_languages_list_item">
-                                    php
+                                    PHP
                                 </li>
                                 <li className="resumeContent_skills_content_languages_list_item">
                                     HTML
@@ -163,7 +163,7 @@ class ResumeContent extends Component {
                         position="Software Development Co-op"
                         companyDate="Imprint Plus, May 2019 - August 2019"
                         location="Richmond, BC"
-                        skills="Javascript, php, Node.js, Express, React, Angular, NGINX, AWS, MySQL,
+                        skills="Javascript, PHP, Node.js, Express, React, Angular, NGINX, AWS, MySQL,
                                 Docker"
                         details={[
                             'Built new web application with a Node backend and React frontend to automate repetitive tasks and save up to 5 hours of time daily',
